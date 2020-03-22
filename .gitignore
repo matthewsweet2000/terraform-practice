@@ -6,3 +6,4 @@ terraform.tfvars
 *.ppk
 *.pub
 .idea/
+.terraform/
