@@ -1,3 +1,4 @@
+asgiref==3.2.7
 astroid==2.0.4
 awscli==1.18.23
 beautifulsoup4==4.6.3
@@ -6,7 +7,7 @@ certifi==2018.11.29
 chardet==3.0.4
 Click==7.0
 colorama==0.4.0
-Django==2.1.2
+Django==3.0.5
 docutils==0.15.2
 futures==3.1.1
 goslate==1.5.1
@@ -28,5 +29,6 @@ requests==2.20.1
 rsa==3.4.2
 s3transfer==0.3.3
 six==1.11.0
+sqlparse==0.3.1
 urllib3==1.24.1
 wrapt==1.10.11
