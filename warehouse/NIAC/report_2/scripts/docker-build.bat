@@ -1,0 +1,1 @@
+docker build -t niac_report_2 ..\..\.. --file ..\..\..\docker\niac_report_2.dockerFile
