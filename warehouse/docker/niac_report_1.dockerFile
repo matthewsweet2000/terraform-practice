@@ -4,6 +4,6 @@ COPY ./requirements.txt requirements.txt
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY warehouse/NIAC NIAC
+COPY NIAC NIAC
 
 CMD ["python", "-m", "NIAC.report_1.src.run"]
