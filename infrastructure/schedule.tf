@@ -6,12 +6,12 @@ resource "aws_cloudwatch_event_rule" "my_app_daily" {
 
 resource "aws_cloudwatch_event_target" "ecs_scheduled_task" {
   target_id = "run-myapp-daily"
-  arn       = "${aws_ecs_cluster.example-cluster.arn}"
-  rule      = "${aws_cloudwatch_event_rule.my_app_daily.name}"
-  role_arn  = "${aws_iam_role.admin.arn}"
+  arn       = aws_ecs_cluster.example-cluster.arn
+  rule      = aws_cloudwatch_event_rule.my_app_daily.name
+  role_arn  = aws_iam_role.admin.arn
 
   ecs_target {
     task_count          = 1
-    task_definition_arn = "${aws_ecs_task_definition.myapp-task-definition.arn}"
+    task_definition_arn = aws_ecs_task_definition.myapp-task-definition.arn
   }
 }
